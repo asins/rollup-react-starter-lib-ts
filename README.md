@@ -14,7 +14,7 @@
 
 Template to create your own Typescript React library with Rollup.
 
-- Rollup v3 :tada:
+- Rollup v4 :tada:
 - Compatible with  new and old React versions, generates ESM/CJS files.
 
 ## Build & Publish
@@ -58,10 +58,10 @@ npm link name-of-your-lib
 
 ### Want to also minify bundle output?
 
-You can install rollup-plugin-terser (still works with rollup v3, but since it has no updates, we need to install it with legacy peer options)
+You can install @rollup/plugin-terser
 
 ```
-npm i rollup-plugin-terser --save-dev --legacy-peer-deps
+npm i @rollup/plugin-terser --save-dev --legacy-peer-deps
 ```
 
 #### Configure
@@ -69,7 +69,7 @@ npm i rollup-plugin-terser --save-dev --legacy-peer-deps
 rollup.config.mjs
 
 ``` javascript
-import { terser } from 'rollup-plugin-terser';
+import { terser } from '@rollup/plugin-terser';
 
 ...
 
